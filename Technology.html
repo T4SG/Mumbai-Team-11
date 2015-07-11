@@ -11,30 +11,18 @@
 	<link rel="stylesheet" href="css/style.css">
 
 <style>	
-.no{display:none;};
+
 </style>
 </head>
 <body>
 	 
 <div class="container">
 <div class="row">
-<form role="form-signin" method="post" action="abc">
+<form role="form-signin" method="post" action="abc" name="equipment_form">
 
 	<div class="col-lg-6">
   <div class="form-group">
   	
-  		 	     <label for="equipment">EQUIPMENT</label>
-  		 	 <select class="form-control" name="equipment" id="equipment">
-				<option class="no">Select EQUIPMENT</option>
-				<optgroup label="HARDWARE" >
-				<option value="benq">BENQ</option>
-				<option value="haier">HAIER</option>
-				</optgroup>
-				<optgroup label="SOFTWARE">
-				<option value="microsoft">MICROSOFT WORKS</option>
-				<option value="google">GOOGLE</option>
-				</optgroup>
-				</select>
    <!-- <input type="text" class="form-control" name ="equipment" id="equipment">-->
 	
      
@@ -45,17 +33,36 @@
 
 
  <div class="form-group">
-    <label for="availability">AVAILABLE EQUIPMENTS</label>
-    <input type="number" class="form-control" name="availability" id="availability" min="1">
+    <table border="0">
+	<tr>
+	<th>Equipments&nbsp;&nbsp;&nbsp;&nbsp;</th>
+	<th>Availability</th>
+	<th>Max</th>
+	</tr>
+	<tr>
+	<td>Computers</td>
+	<td><input type="number" class="form-control" min="1" id="number"></td>
+	<td><input type="number" class="form-control" min="1" id="number"></td>
+	</tr>
+	<tr>
+	<td>Tables</td>
+	<td><input type="number" class="form-control" min="1" id="number"></td>
+	<td><input type="number" class="form-control" min="1" id="number"></td>
+	</tr>
+	<tr>
+	<td>Chairs</td>
+	<td><input type="number" class="form-control" min="1" id="number"></td>
+	<td><input type="number" class="form-control" min="1" id="number"></td>
+	</tr>
+	<tr>
+	
+	
+	</table>
   </div>
 
 	
 
-  <div class="form-group">
-    <label for="total">TOTAL NEEDS</label>
-    <input type="number" class="form-control" name="total" id="total" min="1">
-  </div>
-
+  
  
   <button type="submit" class="btn btn-default">Submit</button>
   </div>
