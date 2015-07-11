@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Navigation Sample</title>
+        <meta name="viewport" content="width=device-width,  initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+    </head>
+    <body>
+        <!-- The sidebar -->
+        <div class="sidebar">
+            <div class="item active" data-page="item1"><div class="text">Item 1</div></div>
+            <div class="item" data-page="item2"><div class="text">Item 2</div></div>
+            <div class="item" data-page="item3"><div class="text">Item 3</div></div>
+        </div>
+
+        <!-- The app page -->
+        <div class="awpage">
+
+            <!-- The app topbar -->
+            <div class="awtopbar">
+                <div class="hamburger"></div>
+                Navigation Sample
+            </div>
+
+            <!-- Content Section 1 -->
+            <div class="awcontent" data-page="item1">
+                <div class="samplecontent item1">Hey there I'm the first page.</div>
+            </div>
+
+            <!-- Content Section 2 -->
+            <div class="awcontent" data-page="item2">
+                <div class="samplecontent item2">Don't mind me I'm just the second page.</div>
+            </div>
+
+            <!-- Content Section 3 -->
+            <div class="awcontent" data-page="item3">
+                <div class="samplecontent item3">Thanks for finding me!! I'm the lonely third page.</div>
+            </div>
+
+        </div>
+
+        <script src="js/swapper.min.js"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
