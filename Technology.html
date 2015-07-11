@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http:-equv="X-UA-compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale-1">
+	<meta name="description" content="">
+	<meta name="Team11" content="">
+	<title>TECHNOLOGY FORM</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+
+<style>	
+.no{display:none;};
+</style>
+</head>
+<body>
+	 
+<div class="container">
+<div class="row">
+<form role="form-signin" method="post" action="abc">
+
+	<div class="col-lg-6">
+  <div class="form-group">
+  	
+  		 	     <label for="equipment">EQUIPMENT</label>
+  		 	 <select class="form-control" name="equipment" id="equipment">
+				<option class="no">Select EQUIPMENT</option>
+				<optgroup label="HARDWARE" >
+				<option value="benq">BENQ</option>
+				<option value="haier">HAIER</option>
+				</optgroup>
+				<optgroup label="SOFTWARE">
+				<option value="microsoft">MICROSOFT WORKS</option>
+				<option value="google">GOOGLE</option>
+				</optgroup>
+				</select>
+   <!-- <input type="text" class="form-control" name ="equipment" id="equipment">-->
+	
+     
+  
+</div>
+
+ 
+
+
+ <div class="form-group">
+    <label for="availability">AVAILABLE EQUIPMENTS</label>
+    <input type="number" class="form-control" name="availability" id="availability" min="1">
+  </div>
+
+	
+
+  <div class="form-group">
+    <label for="total">TOTAL NEEDS</label>
+    <input type="number" class="form-control" name="total" id="total" min="1">
+  </div>
+
+ 
+  <button type="submit" class="btn btn-default">Submit</button>
+  </div>
+</form>
+</div>
+
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
