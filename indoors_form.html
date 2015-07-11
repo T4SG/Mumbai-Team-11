@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+	<style>
+	
+	input.text{
+	size:20px;
+	width:100%
+	};
+	
+	</style>
+        <title> CONDITION/ADEQUACY OF BUILDING AND GROUNDS </title>
+        <meta charset="windows-1252">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1> SANAP</h1>
+        <form name="Condition" action="indoor_insert.php" method="POST">
+            <table border="2" cellpadding="20" cellspacing="5">
+                <thead>
+                    <tr>
+                        <th>AREA</th>
+                        <th>DESCRIPTION</th>
+                        <th>RATING</th>
+                        <th>DESCRIBE REPAIR/FIXING NEEDS</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ROOF</td>
+                        <td><input type="text" name="roofCondition" value="" /></td>
+                        <td>OK<input type="radio" name="roofRating" value="ok" required/> NEED FIXING<input type="radio" name="roofRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="roofDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>OUTSIDE WALL's PaINTING</td>
+                        <td><input type="text" name="outWallCondition" value="" /></td>
+                        <td>OK<input type="radio" name="outWallRating" value="ok" required/>&nbsp; NEED FIXING<input type="radio" name="outWallRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="outWallDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>INTERNAL WALL's PAINTING</td>
+                        <td><input type="text" name="intWallCondition" value="" /></td>
+                        <td>OK<input type="radio" name="intWallRating" value="ok" required/> NEED FIXING<input type="radio" name="intWallRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="intWallDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>CLASSROOM FLOOR</td>
+                        <td><input type="text" name="classCondition" value="" /></td>
+                        <td>OK<input type="radio" name="classRating" value="ok" required/> NEED FIXING<input type="radio" name="classRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="classDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>PLAY AREA(sport pitch ground)</td>
+                        <td><input type="text" name="playAreaCondition" value="" /></td>
+                        <td>OK<input type="radio" name="playAreaRating" value="ok" required/> NEED FIXING<input type="radio" name="playAreaRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="playAreaDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>PLAYGROUND PIECES</td>
+                        <td><input type="text" name="playPiecesCondition" value="" /></td>
+                        <td>OK<input type="radio" name="playPiecesRating" value="ok" required/> NEED FIXING<input type="radio" name="playPiecesRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="playPiecesDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>OUTSIDE WALKWAYS FLOOR</td>
+                        <td><input type="text" name="outWalkCondition" value="" /></td>
+                        <td>OK<input type="radio" name="outWalkRating" value="ok" required/> NEED FIXING<input type="radio" name="outWalkRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="outWalkDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>TEACHER's ROOM</td>
+                        <td><input type="text" name="techRoomCondition" value="" /></td>
+                        <td>OK<input type="radio" name="techRoomRating" value="ok" required/> NEED FIXING<input type="radio" name="techRoomRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="techRoomDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>TOILETS</td>
+                        <td><input type="text" name="toiletCondition" value="" /></td>
+                        <td>OK<input type="radio" name="toiletRating" value="ok" required/> NEED FIXING<input type="radio" name="toiletRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="toiletDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>DRINKING WATER</td>
+                        <td><input type="text" name="drinkWaterCondition" value="" /></td>
+                        <td>OK<input type="radio" name="drinkWaterRating" value="ok" required/> NEED FIXING<input type="radio" name="drinkWaterRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="drinkWaterDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>FURNITURE (DESK/CHAIR)</td>
+                        <td><input type="text" name="furCondition" value="" /></td>
+                        <td>OK<input type="radio" name="furRating" value="ok" required/> NEED FIXING<input type="radio" name="furRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="furDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>EDUCATIONAL STRUCTURE</td>
+                        <td><input type="text" name="eduStructCondition" value="" /></td>
+                        <td>OK<input type="radio" name="eduStructRating" value="ok" required/> NEED FIXING<input type="radio" name="eduStructRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="eduStructDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>EDUCATIONAL MATERIALS(textbooks,pencils,etc.)</td>
+                        <td><input type="text" name="eduMAtCondition" value="" /></td>
+                        <td>OK<input type="radio" name="eduStructMaterial" value="ok" required/> NEED FIXING<input type="radio" name="eduStructMaterial" value="Need Fixing" /></td>
+                        <td><input type="text" name="eduStructDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>LIBRARY BOOKS(if any)</td>
+                        <td><input type="text" name="libBookCondition" value="" /></td>
+                        <td>OK<input type="radio" name="libBookRating" value="ok" required/> NEED FIXING<input type="radio" name="libBookRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="libBookDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>FOOD AREAS/CAFETERIAS</td>
+                        <td><input type="text" name="foodCondition" value="" /></td>
+                        <td>OK<input type="radio" name="foodRating" value="ok" required/> NEED FIXING<input type="radio" name="foodRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="foodDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>FANS(if any)</td>
+                        <td><input type="text" name="fansCondition" value="" /></td>
+                        <td>OK<input type="radio" name="fansRating" value="ok" required/> NEED FIXING<input type="radio" name="fansRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="fansDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>ELECTRICITY</td>
+                        <td><input type="text" name="elecCondition" value="" /></td>
+                        <td>OK<input type="radio" name="elecRating" value="ok" required/> NEED FIXING<input type="radio" name="elecRating" value="Need Fixing" /></td>
+                        <td><input type="text" name="elecDescription" value="" /></td>
+                    </tr>
+                    <tr>
+                        <td>EXTRAS : <input type="text" name="extra" value="" /></td>
+                        <td><input type="text" name="Condition" value="" /></td>
+                        <td>OK<input type="radio" name="Rating" value="ok" /> NEED FIXING<input type="radio" name="Rating" value="Need Fixing" /></td>
+                        <td><input type="text" name="Description" value="" /></td>
+                    </tr>
+					
+					
+                </tbody>
+            </table>
+<center>
+            <input type="submit" value="submit">
+         </center>   
+        </form>
+        
+    </body>
+</html>
