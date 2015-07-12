@@ -1,0 +1,56 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="PhoneApp3.News"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+     xmlns:controls="clr-namespace:SlideView.Library;assembly=SlideView.Library"
+ xmlns:local="clr-namespace:PhoneApp3"  >
+
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- LOCALIZATION NOTE:
+            To localize the displayed strings copy their values to appropriately named
+            keys in the app's neutral language resource file (AppResources.resx) then
+            replace the hard-coded text value between the attributes' quotation marks
+            with the binding clause whose path points to that string name.
+
+            For example:
+
+                Text="{Binding Path=LocalizedResources.ApplicationTitle, Source={StaticResource LocalizedStrings}}"
+
+            This binding points to the template's string resource named "ApplicationTitle".
+
+            Adding supported languages in the Project Properties tab will create a
+            new resx file per language that can carry the translated values of your
+            UI strings. The binding in these examples will cause the value of the
+            attributes to be drawn from the .resx file that matches the
+            CurrentUICulture of the app at run time.
+         -->
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="0,0,0,0" Background="Black">
+
+            <Grid Height="80" VerticalAlignment="Top" Background="#FFF99709">
+                <TextBlock VerticalAlignment="Center" HorizontalAlignment="Center" FontSize="33" FontWeight="Bold" Text="Happy Hearts fund :)"/>
+            </Grid>
+            <Grid Margin="66,90,0,84" >
+                <local:AreaChartDemo x:Name="areachart" Margin="-72,0,0,0"/>
+            </Grid>
+        </Grid>
+        <phone:WebBrowser Source="http://ec2-52-74-235-163.ap-southeast-1.compute.amazonaws.com/HHF4/Aman.html"/>
+    </Grid>
+
+</phone:PhoneApplicationPage>

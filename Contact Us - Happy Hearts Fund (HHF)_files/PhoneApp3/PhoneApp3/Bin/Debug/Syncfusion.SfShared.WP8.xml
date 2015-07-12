@@ -1,0 +1,1800 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Syncfusion.SfShared.WP8</name>
+    </assembly>
+    <members>
+        <member name="T:Syncfusion.WP.Controls.ChildCollection">
+            <summary>
+            Represents a class to maintain the child collection
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ChildCollection.#ctor">
+            <summary>
+            Initializes an instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.ChildCollection"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ChildCollection.IndexOf(System.Object)">
+            <summary>
+            Gets the index of the item
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ChildCollection.Insert(System.Int32,System.Object)">
+            <summary>
+            Inserts an item in the particular index
+            </summary>
+            <param name="index"></param>
+            <param name="item"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ChildCollection.RemoveAt(System.Int32)">
+            <summary>
+            Removes an item in the particular index
+            </summary>
+            <param name="index"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ChildCollection.Add(System.Object)">
+            <summary>
+            Add an item to children
+            </summary>
+            <param name="item"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ChildCollection.Clear">
+            <summary>
+            Clears the children
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ChildCollection.Contains(System.Object)">
+            <summary>
+            Checks if the children contains the given item
+            </summary>
+            <param name="item"></param>
+            <returns>
+            <c>true</c> if it contains; otherwise, <c>false</c>
+            </returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ChildCollection.CopyTo(System.Object[],System.Int32)">
+            <summary>
+            Copies an item to the children
+            </summary>
+            <param name="array"></param>
+            <param name="arrayIndex"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ChildCollection.Remove(System.Object)">
+            <summary>
+            Removes an item from the children
+            </summary>
+            <param name="item"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ChildCollection.GetEnumerator">
+            <summary>
+            Gets the children enumerator
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.ChildCollection.Item(System.Int32)">
+            <summary>
+            Gets or sets the children at the index position
+            </summary>
+            <param name="index"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.ChildCollection.Count">
+            <summary>
+            Gets the count of the children
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.ChildCollection.IsReadOnly">
+            <summary>
+            Returns true if set, otherwise false
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.SfNavigator">
+            <summary>
+            Represents a control for navigation
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SfNavigator.#ctor">
+            <summary>
+            Initializes an instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.SfNavigator"/> class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SfNavigator.UpdateTransform">
+            <summary>
+            Updates the layout for the transformation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfNavigator.HostProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Host.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfNavigator.ActiveItemProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ActiveItem.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfNavigator.ActiveIndexProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for ActiveIndex.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SfNavigator.OnActiveItemChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the active item has changed
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SfNavigator.OnActiveIndexChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when the index of the active item has changed
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SfNavigator.Navigate(System.Object)">
+            <summary>
+            Function to navigate through items
+            </summary>
+            <param name="child"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SfNavigator.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.SfNavigator"/> control.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfNavigator.Host">
+            <summary>
+            Gets or sets the host
+            </summary>
+        </member>
+        <member name="E:Syncfusion.WP.Controls.SfNavigator.Navigated">
+            <summary>
+            Invoke event when item is navigated
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfNavigator.ActiveItem">
+            <summary>
+            Gets or sets the items that are active
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfNavigator.ActiveIndex">
+            <summary>
+            Gets or sets the index of the items that are active
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfNavigator.Items">
+            <summary>
+            Gets or sets the items of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.ChildCollection"/> control.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.SfNavigator.Direction">
+            <summary>
+            Represents an enum list for Direction of navigation
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfNavigator.Direction.Next">
+            <summary>
+            Navigate to the Next item
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfNavigator.Direction.Previous">
+            <summary>
+            Navigate to the Previous item
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.FadeTransition">
+            <summary>
+             This Transition creates a fade effect animation that spans its duration. This
+            is done by updating the opacity variable of the node at regular interval.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.ContentTransition">
+            <summary>
+            Represents a class for the content transition
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ContentTransition.#ctor">
+            <summary>
+            Initializes an instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.ContentTransition"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.FadeTransition.DurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.FadeTransition.EasingProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EasingFunction.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.FadeTransition.Duration">
+            <summary>
+            Gets or sets the length of time for which this timeline plays, not counting
+            repetitions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.FadeTransition.Easing">
+            <summary>
+            Gets or sets <see
+            cref="N:Windows.UI.Xaml.Media.EasingFunctionBase">EasingFunctionBase</see> that allow to
+            apply custom mathematical formulas to animations
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.RotateTransition">
+            <summary>
+             his Transition creates a rotation animation that spans its <see
+            cref="P:Syncfusion.UI.Xaml.Controls.RotateTransition.Duration"/>. This is done
+            by updating the rotate variable of the node at regular interval. The angle value
+            is specified in degrees.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.RotateTransition.DurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.RotateTransition.EasingProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Easing.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.RotateTransition.Duration">
+            <summary>
+            Gets or sets the length of time for which this timeline plays, not counting
+            repetitions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.RotateTransition.Easing">
+            <summary>
+            Gets or sets <see
+            cref="N:Windows.UI.Xaml.Media.EasingFunctionBase">EasingFunctionBase</see> that allow to
+            apply custom mathematical formulas to animations
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.SlideTransition">
+            <summary>
+             Animating the content one after another in a regular <see
+            cref="P:Syncfusion.UI.Xaml.Controls.SlideTransition.Duration"/>.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SlideTransition.Position">
+            <summary>
+            Defines a varible for <see
+            cref="P:Syncfusion.UI.Xaml.Controls.Position"/> 
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SlideTransition.DirectionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Direction.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SlideTransition.DurationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Duration.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SlideTransition.EasingProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Easing.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SlideTransition.CreateExitAnimation(System.Double)">
+            <summary>
+            Create animation for the control while exit
+            </summary>
+            <param name="toValue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SlideTransition.CreateEnterAnimation(System.Double)">
+            <summary>
+            Create animation for the control while enter
+            </summary>
+            <param name="fromValue"></param>
+            <returns></returns>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SlideTransition.Direction">
+            <summary>
+            Gets or sets direction of the slide.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SlideTransition.Duration">
+            <summary>
+            Gets or sets the length of time for which this timeline plays, not counting
+            repetitions.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SlideTransition.Easing">
+            <summary>
+            Gets or sets <see
+            cref="N:Windows.UI.Xaml.Media.EasingFunctionBase">EasingFunctionBase</see> that allow to
+            apply custom mathematical formulas to animations
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.TransitionContentControl">
+             <summary>
+            TransitionContentControl is a <see
+             cref="N:Windows.UI.Xaml.Controls.ContentControl">ContentControl</see> that contains
+             the implementation for the controls that needs transitions.
+             </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.TransitionContentControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.TransitionContentControl"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.TransitionContentControl.TransitionProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Transition.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.TransitionContentControl.EnableAnimationProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for EnableAnimation.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.TransitionContentControl.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.TransitionContentControl"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.TransitionContentControl.OnContentChanged(System.Object,System.Object)">
+            <summary>
+            Invoked when the content is changed
+            </summary>
+            <param name="oldContent"></param>
+            <param name="newContent"></param>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.TransitionContentControl.Transition">
+            <summary>
+            Gets or sets the transition.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.TransitionContentControl.EnableAnimation">
+            <summary>
+            Gets or sets a value to animate while up/down click.
+            </summary>
+            <value>
+            <c>true</c> if [enable animation]; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.TransitionInverter">
+            <summary>
+            Represents a convertor that inverts the transition
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.TransitionInverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Inverts the transition
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.TransitionInverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.SfUpDown">
+            <summary>
+            Represents a control to navigate up and down through the items
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SfUpDown.#ctor">
+            <summary>
+            Initializes an instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.SfUpDown"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfUpDown.UpCommandProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UpCommand.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfUpDown.DownCommandProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DownCommand.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfUpDown.UpCommandParameterProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for commandParameter.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfUpDown.DownCommandParameterProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DownCommandParameter.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfUpDown.UpButtonStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UpButtonStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfUpDown.DownButtonStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for DownButtonStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfUpDown.SpinButtonsAlignmentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SpinButtonsAlignment.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfUpDown.UpDownContentProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for UpDownContent.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SfUpDown.AccentBrushProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for AccentBrush.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SfUpDown.OnApplyTemplate">
+            <summary>
+            Initializes all the child elements of <see
+            cref="T:Syncfusion.UI.Xaml.Controls.SfUpDown"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SfUpDown.OnSpinButtonsAlignmentChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when Spin buttons allignment has changed
+            </summary>
+            <param name="obj"></param>
+            <param name="args"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.SfUpDown.OnSpinButtonsAlignmentChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Invoked when Spin buttons allignment has changed
+            </summary>
+            <param name="args"></param>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfUpDown.UpCommand">
+            <summary>
+            Gets or sets the command for up motion
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfUpDown.DownCommand">
+            <summary>
+            Gets or sets the command for down motion
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfUpDown.UpCommandParameter">
+            <summary>
+            Gets or sets the parameter for up command
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfUpDown.DownCommandParameter">
+            <summary>
+            Gets or sets the parameter for down command
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfUpDown.UpButtonStyle">
+            <summary>
+            Gets or sets the style for up button
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfUpDown.DownButtonStyle">
+            <summary>
+            Gets or sets the style for down button
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfUpDown.SpinButtonsAlignment">
+            <summary>
+            Gets or sets the allignment for spin buttons
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfUpDown.UpDownContent">
+            <summary>
+            Gets or sets the content for up button
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.SfUpDown.AccentBrush">
+            <summary>
+            Gets or sets the accent brush
+            </summary>
+        </member>
+        <member name="E:Syncfusion.WP.Controls.SfUpDown.UpButtonClick">
+            <summary>
+            Event that is raised when UpButton is clicked.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.WP.Controls.SfUpDown.DownButtonClick">
+            <summary>
+            Event that is raised when DownButton is clicked.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.SpinButtonsAlignment">
+            <summary>
+            Represents an enum list for the Spin button aignment
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SpinButtonsAlignment.Left">
+            <summary>
+            Align SpinButtons to Left
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SpinButtonsAlignment.Right">
+            <summary>
+            Align SpinButtons to Right
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.SpinButtonsAlignment.Both">
+            <summary>
+            Align SpinButtons at both the end
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.BooleanToVisibilityConverter">
+            <summary>
+            Represents the converter that converts Boolean values to and
+            from visibility enumeration values
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.BooleanToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts bool variable to visibility
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.BooleanToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.InverseBooleanToVisibilityConverter">
+            <summary>
+            Represents the converter that converts InverseBoolean values to and
+            from visibility enumeration values
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.InverseBooleanToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts Boolean to visibility
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.InverseBooleanToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.BrushModifier">
+            <summary>
+            Represents a convertor that modifies the brush
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.BrushModifier.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Modifies the brush
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.BrushModifier.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.BrushToColorConverter">
+            <summary>
+            Represents a convertor that converts brush to color
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.BrushToColorConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts brush to color
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.BrushToColorConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.DateTimeFormater">
+            <summary>
+            Represents a class that formats the DateTime
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.DateTimeFormater.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the DateTime
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.DateTimeFormater.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.CalendarHeaderFormatter">
+            <summary>
+            Represents a class that formats the Calendar header
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.CalendarHeaderFormatter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Formats the DateTime as header
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.CalendarHeaderFormatter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.NullToVisibilityConverter">
+            <summary>
+            Convertor from null to visibility
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.NullToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the object
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.NullToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the value back into the object
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.EmptyStringToVisibilityConverter">
+            <summary>
+            Convertor for empty string to visibility
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.EmptyStringToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts into visibility
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.EmptyStringToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the value back into the object
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.StringToVisibilityConverter">
+            <summary>
+            Convertor for String to visibility
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.StringToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts to viibility
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.StringToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the value back into the object
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.PrecisionToVisibilityConverter">
+            <summary>
+            Conversion of precision to visibility
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.PrecisionToVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts precision to visibility
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.PrecisionToVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="culture"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.RGBConverter">
+            <summary>
+            Conversion of RGB values
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.RGBConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts into RGB Value
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.RGBConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the value back into the object
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.ToolTipVisibilityConverter">
+            <summary>
+            Converts the ToolTip visibility state
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.ToolTipVisibilityConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts object into visibility
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.ToolTipVisibilityConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts Visibility back into object
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.HsvColor">
+            <summary>
+            Represents a structure for the HSV color values
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.HsvColor.H">
+            <summary>
+            The Hue in 0..360 range.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.HsvColor.S">
+            <summary>
+            The Saturation in 0..1 range.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.HsvColor.V">
+            <summary>
+            The Value in 0..1 range.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.HsvColor.A">
+            <summary>
+            The Alpha/opacity in 0..1 range.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.Pixel">
+            <summary>
+            Represents a class for maintaining Pixels
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.Pixel.#ctor(System.Byte,System.Byte,System.Byte,System.Byte)">
+            <summary>
+            Initializes an instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Pixel"/> class.
+            </summary>
+            <param name="R"></param>
+            <param name="G"></param>
+            <param name="B"></param>
+            <param name="A"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.Pixel.#ctor">
+            <summary>
+            Initializes an instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Pixel"/> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.Pixel.R">
+            <summary>
+            Gets or sets the R byte
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.Pixel.G">
+            <summary>
+            Gets or sets the G byte
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.Pixel.B">
+            <summary>
+            Gets or sets the B byte
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.Pixel.A">
+            <summary>
+            Gets or sets the A byte
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.Position">
+            <summary>
+            Represents an enum list for the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.Position"/>
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.Position.Bottom">
+            <summary>
+            Bottom position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.Position.Center">
+            <summary>
+            Center position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.Position.Top">
+            <summary>
+            Top position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.Position.Left">
+            <summary>
+            Left position
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.Position.Right">
+            <summary>
+            Right position
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Primitives.SlideDirection">
+            <summary>
+            Creates an enum list for the Slide Direction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.SlideDirection.Up">
+            <summary>
+            Up Direction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.SlideDirection.Down">
+            <summary>
+            Down Direction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.SlideDirection.Left">
+            <summary>
+            Up Direction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.SlideDirection.Right">
+            <summary>
+            Down Direction
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.SlideDirection.Default">
+            <summary>
+            Default Direction
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Primitives.Precision">
+            <summary>
+            Creates an enum list for the precision
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.Precision.Standard">
+            <summary>
+            Standard Precision
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.Precision.Half">
+            <summary>
+            Half Precision
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.Precision.Exact">
+            <summary>
+            Exact Precision
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.ColorExtension">
+            <summary>
+            Represents a class for the color extension
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ColorExtension.AsInt(System.Windows.Media.Color)">
+            <summary>
+            Gets the color as an integer
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ColorExtension.GetPixel(System.Windows.Media.Color)">
+            <summary>
+            Gets pixel value from the color
+            </summary>
+            <param name="color"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ColorExtension.ToHsv(System.Windows.Media.Color)">
+            <summary>
+            Converts the RGBA color to HSV
+            </summary>
+            <param name="rgba"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.DateTimeExtension">
+            <summary>
+            Represents a class for the DateTime Extension
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.DateTimeExtension.EachDayInMonth(System.DateTime)">
+            <summary>
+            Calculates each day in the given month
+            </summary>
+            <param name="datetime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.DateTimeExtension.FirstDay(System.DateTime)">
+            <summary>
+            Returns the first day of the given DateTime
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.DateTimeExtension.StartOfWeek(System.DateTime,System.DayOfWeek)">
+            <summary>
+            Returns the last day of the given DateTime
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.DateTimeExtension.LastDay(System.DateTime)">
+            <summary>
+            Returns the last day of the given DateTime
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.DateTimeExtension.ToDateTime(System.Object)">
+            <summary>
+            Returns the DateTime of the given object
+            </summary>
+            <param name="dateTime"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.GridExtension">
+            <summary>
+            Represents a class for the Grid Extension
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.GridExtension.ElementAt(System.Windows.Controls.Grid,System.Int32,System.Int32)">
+            <summary>
+            Gets the element at the given position.
+            </summary>
+            <param name="grid"></param>
+            <param name="row"></param>
+            <param name="column"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.WriteableBitmapExtention">
+            <summary>
+            Represents a class for Bitmap Extensions
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.WriteableBitmapExtention.RenderSaturationValue(System.Windows.Media.Imaging.WriteableBitmap,System.Double)">
+            <summary>
+            Validate the saturation values
+            </summary>
+            <param name="target"></param>
+            <param name="hue"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.WriteableBitmapExtention.RenderSaturationValueAsync(System.Windows.Media.Imaging.WriteableBitmap,System.Double)">
+            <summary>
+            Validate the saturation values
+            </summary>
+            <param name="target"></param>
+            <param name="hue"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.WriteableBitmapExtention.GetPixels(System.Int32[])">
+            <summary>
+            Retrieves information of the pixel buffer
+            </summary>
+            <param name="pixelBuffer"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Primitives.Clipper">
+            <summary>
+            Clips a ratio of its content.
+            </summary>
+            <QualityBand>Preview</QualityBand>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.Clipper.RatioVisibleProperty">
+            <summary>
+            Identifies the RatioVisible dependency property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.Clipper.OnRatioVisibleChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            RatioVisibleProperty property changed handler.
+            </summary>
+            <param name="d">PartialView that changed its RatioVisible.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.Clipper.OnRatioVisibleChanged(System.Double,System.Double)">
+            <summary>
+            RatioVisibleProperty property changed handler.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>        
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.Clipper.#ctor">
+            <summary>
+            Initializes a new instance of the Clipper class.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.Clipper.ClipContent">
+            <summary>
+            Updates the clip geometry.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.Clipper.RatioVisible">
+            <summary>
+            Gets or sets the percentage of the item visible.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Primitives.HeaderedContentControl">
+            <summary>
+            Represents a control with headered content
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.HeaderedContentControl.#ctor">
+            <summary>
+            Initializes an instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Primitives.HeaderedContentControl"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.HeaderedContentControl.HeaderProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Header.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.HeaderedContentControl.HeaderStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.HeaderedContentControl.HeaderTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HeaderedContentControl.Header">
+            <summary>
+            Gets or sets the data used as header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HeaderedContentControl.HeaderStyle">
+            <summary>
+            Gets or sets the style for the data used as header
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HeaderedContentControl.HeaderTemplate">
+            <summary>
+            Gets or sets the template for the data used as header
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Primitives.HeaderedItemsControl">
+            <summary>
+             Represents a control that contains multiple items and has a header.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl"/>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.HeaderedItemsControl.#ctor">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl"/> class.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.HeaderedItemsControl.HeaderStyleProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderStyle.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.HeaderedItemsControl.HeaderProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for Header.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.HeaderedItemsControl.HeaderTemplateProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for HeaderTemplate.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.HeaderedItemsControl.PrepareHeaderedItemsControlContainer(System.Object,System.Windows.Controls.ItemsControl)">
+            <summary>
+            Gets or sets a <see
+            cref="N:Windows.UI.Xaml.Controls.DataTemplateSelector">DataTemplateSelector</see> that provides
+            custom logic for choosing the template used to display the <see
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.Header"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplate"/>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HeaderedItemsControl.HeaderStyle">
+            <summary>
+            Gets or sets  the style that appearance of the <see
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.Header"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplate"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplateSelector"/>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HeaderedItemsControl.Header">
+            <summary>
+            Gets or sets the data used for the header of each control.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplate"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplateSelector"/>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HeaderedItemsControl.HeaderTemplate">
+            <summary>
+            Gets or sets the <see cref="N:Windows.UI.Xaml.DataTemplate">DataTemplate</see> used
+            to display the content of the control&apos;s <see
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.Header"/>.
+            </summary>
+            <value>
+            The default value is null.
+            </value>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderStyle"/>
+            <seealso
+            cref="P:Syncfusion.UI.Xaml.Primitives.HeaderedItemsControl.HeaderTemplateSelector"/>
+        </member>
+        <member name="T:Syncfusion.WP.Primitives.HierarchicalDataTemplate">
+            <summary>
+            Represents a <see cref="T:System.Windows.DataTemplate" /> that supports
+            <see cref="T:System.Windows.Controls.HeaderedItemsControl" /> objects,
+            such as <see cref="T:System.Windows.Controls.TreeViewItem" />.
+            </summary>
+            <QualityBand>Stable</QualityBand>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.HierarchicalDataTemplate._itemTemplate">
+            <summary>
+            The DataTemplate to apply to the ItemTemplate property on a
+            generated HeaderedItemsControl (such as a MenuItem or a
+            TreeViewItem), to indicate how to display items from the next level
+            in the data hierarchy.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.HierarchicalDataTemplate._itemContainerStyle">
+            <summary>
+            The Style to apply to the ItemContainerStyle property on a generated
+            HeaderedItemsControl (such as a MenuItem or a TreeViewItem), to
+            indicate how to style items from the next level in the data
+            hierarchy.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.HierarchicalDataTemplate.#ctor">
+            <summary>
+            Initializes a new instance of the
+            <see cref="T:WinRTXamlToolkit.Controls.Data.HierarchicalDataTemplate" /> class.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HierarchicalDataTemplate.ItemsSource">
+            <summary>
+            Gets or sets the values for the item source
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HierarchicalDataTemplate.IsItemTemplateSet">
+            <summary>
+            Gets a value indicating whether the ItemTemplate property was set on
+            the template.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HierarchicalDataTemplate.ItemTemplate">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.DataTemplate" /> to
+            apply to the
+            <see cref="P:System.Windows.Controls.ItemsControl.ItemTemplate" />
+            property on a generated
+            <see cref="T:System.Windows.Controls.HeaderedItemsControl" />, such
+            as a <see cref="T:System.Windows.Controls.TreeViewItem" />, to
+            indicate how to display items from the next sublevel in the data
+            hierarchy.
+            </summary>
+            <value>
+            The <see cref="T:System.Windows.DataTemplate" /> to apply to the
+            <see cref="P:System.Windows.Controls.ItemsControl.ItemTemplate" />
+            property on a generated
+            <see cref="T:System.Windows.Controls.HeaderedItemsControl" />, such
+            as a <see cref="T:System.Windows.Controls.TreeViewItem" />, to
+            indicate how to display items from the next sublevel in the data
+            hierarchy.
+            </value>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HierarchicalDataTemplate.Template">
+            <summary>
+            Gets or sets the value for the template
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HierarchicalDataTemplate.IsItemContainerStyleSet">
+            <summary>
+            Gets a value indicating whether the ItemContainerStyle property was
+            set on the template.
+            </summary>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.HierarchicalDataTemplate.ItemContainerStyle">
+            <summary>
+            Gets or sets the <see cref="T:System.Windows.Style" /> that is
+            applied to the item container for each child item.
+            </summary>
+            <value>
+            The style that is applied to the item container for each child item.
+            </value>
+        </member>
+        <member name="T:Syncfusion.WP.Primitives.LinearClipper">
+            <summary>
+            Clips the content of the control in a given direction.
+            </summary>
+            <QualityBand>Preview</QualityBand>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.LinearClipper.ExpandDirectionProperty">
+            <summary>
+            Identifies the ExpandDirection dependency property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.LinearClipper.ClipContent">
+            <summary>
+            Updates the clip geometry.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.LinearClipper.OnExpandDirectionChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            ExpandDirectionProperty property changed handler.
+            </summary>
+            <param name="d">ExpandDirectionView that changed its ExpandDirection.</param>
+            <param name="e">Event arguments.</param>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.LinearClipper.OnExpandDirectionChanged(Syncfusion.WP.Primitives.ExpandDirection,Syncfusion.WP.Primitives.ExpandDirection)">
+            <summary>
+            ExpandDirectionProperty property changed handler.
+            </summary>
+            <param name="oldValue">Old value.</param>
+            <param name="newValue">New value.</param>        
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.LinearClipper.ExpandDirection">
+            <summary>
+            Gets or sets the clipped edge.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Primitives.ExpandDirection">
+            <summary>
+            Represents an enum list for the direction to expand.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.ExpandDirection.Down">
+            <summary>
+            Specifies that the <see cref="T:System.Windows.Controls.Expander" />
+            control opens in the down direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.ExpandDirection.Up">
+            <summary>
+            Specifies that the <see cref="T:System.Windows.Controls.Expander" />
+            control opens in the up direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.ExpandDirection.Left">
+            <summary>
+            Specifies that the <see cref="T:System.Windows.Controls.Expander" />
+            control opens in the left direction.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.ExpandDirection.Right">
+            <summary>
+            Specifies that the <see cref="T:System.Windows.Controls.Expander" />
+            control opens in the right direction.
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Primitives.Selector">
+            <summary>
+            Represents a class for defining the selection properties.
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.Selector.SelectedIndexProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedIndex.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Primitives.Selector.SelectedItemProperty">
+            <summary>
+            Using a DependencyProperty as the backing store for SelectedItem.  This enables animation, styling, binding, etc...
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.Selector.OnApplyTemplate">
+            <summary>
+            Initializes the SelectedItem property.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.Selector.OnSelectedItemChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Selector SelectedItem Property changed.
+            </summary>
+            <param name="obj">The obj.</param>
+            <param name="args">The DependencyPropertyChangedEventArgs instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.Selector.OnSelectedItemChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Selector SelectedItem Property changed.
+            </summary>
+            <param name="args">The DependencyPropertyChangedEventArgs instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.Selector.OnSelectionChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Selector SelectedItem Property changed.
+            </summary>
+            <param name="args">The DependencyPropertyChangedEventArgs instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.Selector.OnSelectedIndexChanged(System.Windows.DependencyObject,System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Selector SelectedIndex Property changed.
+            </summary>
+            <param name="obj">The obj.</param>
+            <param name="args">The DependencyPropertyChangedEventArgs instance containing the event data.</param>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.Selector.OnSelectedIndexChanged(System.Windows.DependencyPropertyChangedEventArgs)">
+            <summary>
+            Called when the Selector SelectedIndex Property changed.
+            </summary>
+            <param name="args">The DependencyPropertyChangedEventArgs instance containing the event data.</param>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.Selector.SelectedIndex">
+            <summary>
+            Gets or sets tthe index for the selecte item.
+            </summary>
+            <value>
+            The default value is -1
+            </value>
+        </member>
+        <member name="P:Syncfusion.WP.Primitives.Selector.SelectedItem">
+            <summary>
+            Gets or sets the selected item.
+            </summary>
+        </member>
+        <member name="E:Syncfusion.WP.Primitives.Selector.SelectionChanged">
+            <summary>
+            Occurs when the selection has changed
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.ColorPickerHelper">
+            <summary>
+            Represents a helping class for the <see
+            cref="T:Syncfusion.UI.Xaml.Controls.SfColorPicker"/> control.
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ColorPickerHelper.FromHsv(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Gets the ARGB values from HSV
+            </summary>
+            <param name="hue"></param>
+            <param name="saturation"></param>
+            <param name="value"></param>
+            <param name="alpha"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ColorPickerHelper.IntColorFromBytes(System.Byte,System.Byte,System.Byte,System.Byte)">
+            <summary>
+            Gets the color from the input bytes
+            </summary>
+            <param name="a"></param>
+            <param name="r"></param>
+            <param name="g"></param>
+            <param name="b"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ColorPickerHelper.UpdateColorValue(System.Double,System.Double,System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Update all the color values
+            </summary>
+            <param name="hue"></param>
+            <param name="x"></param>
+            <param name="y"></param>
+            <param name="ph"></param>
+            <param name="pw"></param>
+            <param name="invPh"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ColorPickerHelper.GetCanvasPosition(Syncfusion.WP.Controls.HsvColor,System.Double,System.Double)">
+            <summary>
+            Gets the canvas position
+            </summary>
+            <param name="hsv"></param>
+            <param name="ph"></param>
+            <param name="pw"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.ColorPickerHelper.FromHsl(System.Double,System.Double,System.Double,System.Double)">
+            <summary>
+            Returns the A, RGB values
+            </summary>
+            <param name="hue"></param>
+            <param name="saturation"></param>
+            <param name="lightness"></param>
+            <param name="alpha"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Utils.DelegateCommand">
+            <summary>
+            Represents a class for the delegate command
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Utils.DelegateCommand.#ctor(System.Action{System.Object},System.Predicate{System.Object})">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Utils.DelegateCommand"/> class.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Utils.DelegateCommand"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Utils">Syncfusion.UI.Xaml.Utils
+            Namespace</seealso>
+            <param name="executeAction"></param>
+            <param name="canExecute"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Utils.DelegateCommand.#ctor(System.Action{System.Object})">
+            <summary>
+            Initializes a new instance of the <see
+            cref="T:Syncfusion.UI.Xaml.Utils.DelegateCommand"/> class.
+            </summary>
+            <seealso cref="T:Syncfusion.UI.Xaml.Utils.DelegateCommand"/>
+            <seealso cref="N:Syncfusion.UI.Xaml.Utils">Syncfusion.UI.Xaml.Utils
+            Namespace</seealso>
+            <param name="executeAction"></param>
+        </member>
+        <member name="M:Syncfusion.WP.Utils.DelegateCommand.UpdateCanExecute">
+            <summary>
+            Invokes event if can execute
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Utils.DelegateCommand.CanExecute(System.Object)">
+            <summary>
+            Returns a value if can execute
+            </summary>
+            <param name="parameter"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Utils.DelegateCommand.Execute(System.Object)">
+            <summary>
+            Executes the parameter command
+            </summary>
+            <param name="parameter"></param>
+        </member>
+        <member name="E:Syncfusion.WP.Utils.DelegateCommand.CanExecuteChanged">
+            <summary>
+            Occurs when value of CanExecute as changed
+            </summary>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.ColorToBrushConverter">
+            <summary>
+            Represents a convertor that converts color to brush
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.ColorToBrushConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts color to brush
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.ColorToBrushConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.DoubleToThicknessConverter">
+            <summary>
+            Represents a convertor that converts Double to thickness
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.DoubleToThicknessConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts Double to thickness
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.DoubleToThicknessConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.InvertRadialDoubleToThicknessConverter">
+            <summary>
+             Conversion of InvertRadialDouble To Thickness
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.InvertRadialDoubleToThicknessConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts InvertRadialDouble To Thickness
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.InvertRadialDoubleToThicknessConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.PopupPositioner">
+            <summary>
+            Converts Popup position
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.PopupPositioner.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            converts into position value
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.PopupPositioner.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.RadialDoubleToThicknessConverter">
+            <summary>
+            Conversion of Radial Double to thickness
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.RadialDoubleToThicknessConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts Radial Double to thickness
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.RadialDoubleToThicknessConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts back into default type
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Converters.RadiusToWidthConverter">
+            <summary>
+            Conversion of radius to width
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.RadiusToWidthConverter.Convert(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the Raddius to width
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="M:Syncfusion.WP.Converters.RadiusToWidthConverter.ConvertBack(System.Object,System.Type,System.Object,System.Globalization.CultureInfo)">
+            <summary>
+            Converts the width back into radius
+            </summary>
+            <param name="value"></param>
+            <param name="targetType"></param>
+            <param name="parameter"></param>
+            <param name="language"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Controls.PixelBufferInfo">
+            <summary>
+            Represents a class to maintain the pixel buffer Information
+            </summary>
+        </member>
+        <member name="F:Syncfusion.WP.Controls.PixelBufferInfo.pixels">
+            <summary>
+            Declares a variable for pixels
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Controls.PixelBufferInfo.#ctor(System.Int32[])">
+            <summary>
+            Retieves information about the pixel buffer
+            </summary>
+            <param name="pixelBuffer"></param>
+        </member>
+        <member name="P:Syncfusion.WP.Controls.PixelBufferInfo.Item(System.Int32)">
+            <summary>
+            Gets or sets the pixels
+            </summary>
+            <param name="i"></param>
+            <returns></returns>
+        </member>
+        <member name="T:Syncfusion.WP.Primitives.DataTemplateSelector">
+            <summary>
+            Represents a class for selecting the DataTemplate 
+            <see cref="T:System.Windows.DataTemplate"/>
+            </summary>
+        </member>
+        <member name="M:Syncfusion.WP.Primitives.DataTemplateSelector.SelectTemplate(System.Object,System.Windows.DependencyObject)">
+            <summary>
+            Selects the <see 
+            cref="T:System.Windows.DataTemplate"/>
+            </summary>
+            <param name="item"></param>
+            <param name="container"></param>
+            <returns></returns>
+        </member>
+        <member name="T:ClassReferenceAttribute">
+            <summary>
+            Represents a class for the Reference attributes
+            </summary>
+        </member>
+        <member name="P:ClassReferenceAttribute.IsReviewed">
+            <summary>
+            Returns a value when set
+            </summary>
+            <value>
+            <c>true</c> if instance is created ; otherwise, <c>false</c>.
+            </value>
+        </member>
+        <member name="P:ClassReferenceAttribute.ShouldInclude">
+            <summary>
+            Returns a value when set
+            </summary>
+            <value>
+            <c>true</c> if instance is created ; otherwise, <c>false</c>.
+            </value>
+        </member>
+    </members>
+</doc>
