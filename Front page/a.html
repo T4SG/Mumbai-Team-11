@@ -3,5 +3,13 @@
 </head>
 <body>
 <img src="imagefr1.jpg" width="100%" height="95%"></img>
+
+<script type="text/javascript"> 
+function savePageAsPDF() { 
+   var pURL = "http://savepageaspdf.pdfonline.com/pdfonline/pdfonline.asp?cURL=" + escape(document.location.href); 
+  window.open(pURL, "PDFOnline", "scrollbars=yes, resizable=yes,width=640, height=480,menubar,toolbar,location");
+</script>
+<a href="javascript:savePageAsPDF()">Save Page As PDF</a>
+
 </body>
 </html>
